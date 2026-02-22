@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground: #1a1a1a;
+  --background: #fafaf9;
+  --accent: #059669;
+  --muted: #78716c;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Focus ring for accessibility */
+input:focus-visible,
+select:focus-visible,
+button:focus-visible {
+  @apply outline-none ring-2 ring-emerald-500 ring-offset-2;
+}
